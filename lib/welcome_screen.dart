@@ -8,11 +8,12 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        width: double.infinity,
-        height: double.infinity,
+        width: MediaQuery.sizeOf(context).width,
+        height: MediaQuery.sizeOf(context).height,
         color: Colors.white,
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Image.asset('images/boy.png'),
+          Image.asset('images/boy.png',
+              height: MediaQuery.sizeOf(context).height * 0.4,),
           SizedBox(height: 5),
           Text(
             "Order Your Food Now!",
