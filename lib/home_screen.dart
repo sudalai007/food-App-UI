@@ -296,19 +296,20 @@ class HomeScreen extends StatelessWidget {
                                       ]),
                                     ),
                                     SizedBox(height: 10),
-                                    Container(
-                                      padding: EdgeInsets.all(12),
-                                      decoration: BoxDecoration(
-                                        color: Color(0XFFFF2F08),
-                                        borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(10)),
-                                      ),
-                                      child: Text(
-                                        "\$ 15.89",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.bold),
+                                    Material(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          bottomRight: Radius.circular(10)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10),
+                                        child: Text(
+                                          "\$ 15.89",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold),
+                                        ),
                                       ),
                                     )
                                   ],
